@@ -1,5 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+```gitignore
 # dependencies
 /node_modules
 /.pnp
@@ -30,8 +29,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# environment variables
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI / coding agent instructions
+claude.md
+CLAUDE.md
+Agents.md
+AGENTS.md
+
+# AI / editor local files
+.cursor/
+.cursorrules
+.claude/
+```
